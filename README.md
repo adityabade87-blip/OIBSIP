@@ -1,90 +1,54 @@
-# Retail Sales EDA
+# Titanic Dataset - Data Cleaning Project
 
-## Project Overview
-
-This project performs Exploratory Data Analysis (EDA) on a retail sales dataset to understand sales trends, customer demographics, product category performance, and customer spending patterns.
-
-## Objectives
-
-- Analyze the structure and quality of the dataset.
-- Understand monthly and quarterly sales trends.
-- Analyze customer demographics based on age and gender.
-- Compare product categories based on quantity sold and revenue.
-- Identify relationships between numerical variables.
-- Generate useful business insights and recommendations.
-
-## Technologies Used
-
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+## Objective
+The objective of this project is to clean and prepare the Titanic dataset for further data analysis.
 
 ## Dataset
+The dataset contains information about Titanic passengers, including passenger details, gender, age, ticket, fare, and other related information.
 
-The dataset contains 1,000 retail transactions with the following information:
+## Tools & Libraries
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
-- Transaction ID
-- Date
-- Customer ID
-- Gender
-- Age
-- Product Category
-- Quantity
-- Price per Unit
-- Total Amount
+## Data Cleaning Steps
 
-## Analysis Performed
+### 1. Data Quality Report
+- Checked the number of rows and columns.
+- Checked missing/null values.
+- Checked duplicate records.
+- Checked data types.
+- Checked value ranges and possible anomalies.
 
-### 1. Initial Data Inspection
+### 2. Missing Data Handling
+Missing values were handled using appropriate techniques based on the column and the nature of the data.
 
-Checked the dataset shape, data types, and missing values.
+### 3. Duplicate Removal
+Duplicate records were checked and removed where required.
 
-### 2. Descriptive Statistics
+### 4. Data Standardization
+Inconsistent values and formatting were checked and standardized.
 
-Calculated descriptive statistics including mean, median, mode, and standard deviation for numerical columns.
+### 5. Outlier Detection
+Outliers were detected using the IQR (Interquartile Range) method and appropriate action was taken.
 
-### 3. Sales Trend Analysis
+### 6. Data Type Correction
+Columns were checked and converted to appropriate data types wherever required.
 
-Analyzed monthly and quarterly sales trends using line charts.
+## Before vs After
+The dataset was compared before and after cleaning based on:
+- Number of rows
+- Null values
+- Duplicate records
+- Data types
 
-### 4. Customer Demographics
+## Output
+The cleaned dataset was saved as:
 
-Analyzed customer distribution by gender and age groups.
-
-### 5. Product Category Analysis
-
-Compared product categories based on total quantity sold and revenue generated.
-
-### 6. Correlation Analysis
-
-Created a correlation heatmap to understand relationships between numerical variables.
-
-### 7. Additional Analysis
-
-Compared average spending between male and female customers.
-
-### 8. Top 10 Transactions
-
-The dataset does not contain a Product Name column. Therefore, the analysis uses the top 10 transactions based on quantity sold as an alternative.
-
-## Key Insights
-
-- Female and male customers are almost evenly distributed.
-- The 36–50 and 51–64 age groups have the highest customer counts.
-- Monthly sales fluctuate across the year.
-- Q2 and Q4 of 2023 recorded relatively higher sales.
-- Product categories differ in quantity sold and revenue contribution.
-- Average spending is similar for male and female customers.
-
-## Business Recommendations
-
-- Focus marketing campaigns on the 36–50 and 51–64 age groups.
-- Plan promotions during lower-sales months.
-- Maintain sufficient inventory for high-performing product categories.
-- Use customer spending patterns to create targeted offers.
+Titanic-Cleaned.csv
 
 ## Conclusion
-
-The Retail Sales EDA project provides insights into customer demographics, sales trends, product category performance, and spending patterns. These findings can help businesses improve marketing strategies, inventory planning, and customer targeting.
+The Titanic dataset was successfully cleaned and prepared for further data analysis.
